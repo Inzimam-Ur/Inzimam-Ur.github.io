@@ -1,0 +1,1367 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<title>Professional Experiences | Inzimam Ur Rehman</title>
+
+	<meta charset="utf-8" />
+
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no"
+	/>
+
+	<link
+		rel="stylesheet"
+		href="assets/css/main.css"
+	/>
+
+	<noscript>
+		<link
+			rel="stylesheet"
+			href="assets/css/noscript.css"
+		/>
+	</noscript>
+
+
+	<style>
+
+		/* =========================================================
+		   PROFESSIONAL EXPERIENCES PAGE
+		   ========================================================= */
+
+
+		/* =========================================================
+		   EXPERIENCE GRID
+		   ========================================================= */
+
+		.experience-grid {
+
+			display: grid;
+
+			grid-template-columns:
+				repeat(2, minmax(0, 1fr));
+
+			gap: 2em;
+
+			margin-top: 2em;
+
+		}
+
+
+		/* =========================================================
+		   EXPERIENCE CARD
+		   ========================================================= */
+
+		.experience-card {
+
+			background:
+				rgba(255, 255, 255, 0.03);
+
+			border:
+				solid 1px rgba(255, 255, 255, 0.15);
+
+			transition:
+				transform 0.25s ease,
+				border-color 0.25s ease,
+				background-color 0.25s ease;
+
+			overflow: hidden;
+
+		}
+
+
+		.experience-card:hover {
+
+			transform:
+				translateY(-6px);
+
+			border-color:
+				#9bf1ff;
+
+			background:
+				rgba(255, 255, 255, 0.06);
+
+		}
+
+
+		/* =========================================================
+		   EXPERIENCE IMAGE
+		   ========================================================= */
+
+		.experience-card .experience-image {
+
+			display: block;
+
+			width: 100%;
+
+			height: 260px;
+
+			overflow: hidden;
+
+		}
+
+
+		.experience-card .experience-image img {
+
+			width: 100%;
+
+			height: 100%;
+
+			object-fit: cover;
+
+			object-position: center;
+
+			transition:
+				transform 0.4s ease;
+
+		}
+
+
+		.experience-card:hover
+		.experience-image img {
+
+			transform:
+				scale(1.04);
+
+		}
+
+
+		/* =========================================================
+		   EXPERIENCE CONTENT
+		   ========================================================= */
+
+		.experience-content {
+
+			padding: 2em;
+
+		}
+
+
+		.experience-number {
+
+			display: inline-block;
+
+			margin-bottom: 0.8em;
+
+			font-size: 0.8em;
+
+			font-weight: 700;
+
+			letter-spacing: 0.15em;
+
+			color:
+				#9bf1ff;
+
+		}
+
+
+		.experience-card h3 {
+
+			margin-bottom: 0.5em;
+
+		}
+
+
+		/* =========================================================
+		   EXPERIENCE CATEGORY
+		   ========================================================= */
+
+		.experience-category {
+
+			display: inline-block;
+
+			margin-bottom: 1.2em;
+
+			padding:
+				0.35em 0.75em;
+
+			border:
+				solid 1px rgba(255, 255, 255, 0.25);
+
+			font-size: 0.7em;
+
+			font-weight: 700;
+
+			letter-spacing: 0.12em;
+
+			text-transform:
+				uppercase;
+
+		}
+
+
+		/* =========================================================
+		   EXPERIENCE META
+		   ========================================================= */
+
+		.experience-meta {
+
+			margin-bottom: 1.2em;
+
+			font-size: 0.9em;
+
+			color:
+				rgba(255, 255, 255, 0.75);
+
+		}
+
+
+		.experience-meta strong {
+
+			color:
+				#ffffff;
+
+		}
+
+
+		.experience-content p {
+
+			margin-bottom: 1.5em;
+
+		}
+
+
+		.experience-card .actions {
+
+			margin-bottom: 0;
+
+		}
+
+
+		/* =========================================================
+		   EXPERIENCE OVERVIEW
+		   ========================================================= */
+
+		.experience-stats {
+
+			display: grid;
+
+			grid-template-columns:
+				repeat(4, 1fr);
+
+			gap: 1em;
+
+			margin:
+				2.5em 0 1em 0;
+
+		}
+
+
+		.experience-stat {
+
+			text-align: center;
+
+			padding:
+				1.5em 1em;
+
+			border:
+				solid 1px rgba(255, 255, 255, 0.15);
+
+			background:
+				rgba(255, 255, 255, 0.03);
+
+		}
+
+
+		.experience-stat strong {
+
+			display: block;
+
+			font-size: 1.8em;
+
+			color:
+				#ffffff;
+
+			margin-bottom:
+				0.2em;
+
+		}
+
+
+		.experience-stat span {
+
+			font-size: 0.75em;
+
+			text-transform:
+				uppercase;
+
+			letter-spacing:
+				0.08em;
+
+		}
+
+
+		/* =========================================================
+		   BOTTOM EXPERIENCE SECTION
+		   ========================================================= */
+
+		.experience-box {
+
+			margin-top: 2em;
+
+			padding: 2em;
+
+			border-left:
+				solid 4px #9bf1ff;
+
+			background:
+				rgba(255, 255, 255, 0.03);
+
+		}
+
+
+		/* =========================================================
+		   TABLET
+		   ========================================================= */
+
+		@media screen and (max-width: 980px) {
+
+			.experience-grid {
+
+				grid-template-columns:
+					1fr;
+
+			}
+
+
+			.experience-stats {
+
+				grid-template-columns:
+					repeat(2, 1fr);
+
+			}
+
+		}
+
+
+		/* =========================================================
+		   MOBILE
+		   ========================================================= */
+
+		@media screen and (max-width: 736px) {
+
+			.experience-card
+			.experience-image {
+
+				height: 220px;
+
+			}
+
+
+			.experience-content {
+
+				padding: 1.5em;
+
+			}
+
+
+			.experience-stats {
+
+				grid-template-columns:
+					1fr 1fr;
+
+			}
+
+		}
+
+
+		@media screen and (max-width: 480px) {
+
+			.experience-stats {
+
+				grid-template-columns:
+					1fr;
+
+			}
+
+
+			.experience-card
+			.experience-image {
+
+				height: 200px;
+
+			}
+
+		}
+
+	</style>
+
+</head>
+
+
+<body class="is-preload">
+
+
+	<!-- =====================================================
+	     WRAPPER
+	     ===================================================== -->
+
+	<div id="wrapper">
+
+
+		<!-- =====================================================
+		     HEADER
+		     ===================================================== -->
+
+		<header id="header" class="alt style2">
+
+			<a
+				href="index.html"
+				class="logo"
+			>
+
+				<strong>
+					Inzimam Ur Rehman
+				</strong>
+
+				<span>
+					Portfolio
+				</span>
+
+			</a>
+
+
+			<nav>
+
+				<a href="#menu">
+					Menu
+				</a>
+
+			</nav>
+
+		</header>
+
+
+		<!-- =====================================================
+		     MENU
+		     ===================================================== -->
+
+		<nav id="menu">
+
+			<div class="menu-header">
+
+				<span class="menu-label">
+					PORTFOLIO
+				</span>
+
+				<h2>
+					Explore My Work
+				</h2>
+
+			</div>
+
+
+			<ul class="links">
+
+				<li>
+					<a href="index.html">
+						<span>Home</span>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="about.html">
+						<span>About Me</span>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="achievements.html">
+						<span>Achievements</span>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="Projects.html">
+						<span>Projects</span>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="International Competations and Hacathowns.html">
+						<span>Competitions &amp; Hackathons</span>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="Professioanl Experience.html">
+						<span>Professional Experiences</span>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="Community Service.html">
+						<span>Community Service</span>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="#contact">
+						<span>Contact</span>
+					</a>
+				</li>
+
+			</ul>
+
+		</nav>
+
+
+		<!-- =====================================================
+		     BANNER
+		     ===================================================== -->
+
+		<section
+			id="banner"
+			class="style2"
+		>
+
+			<div class="inner">
+
+
+				<span class="image">
+
+					<img
+						src="images/pic07.jpg"
+						alt="Professional Experiences"
+					/>
+
+				</span>
+
+
+				<header class="major">
+
+					<h1>
+						Professional Experiences
+					</h1>
+
+				</header>
+
+
+				<div class="content">
+
+					<p>
+						Academic, professional, and project-based experiences<br />
+						that have shaped my skills, responsibilities, and career journey.
+					</p>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<!-- =====================================================
+		     MAIN
+		     ===================================================== -->
+
+		<div id="main">
+
+
+			<!-- =================================================
+			     INTRODUCTION
+			     ================================================= -->
+
+			<section id="one">
+
+				<div class="inner">
+
+
+					<header class="major">
+
+						<h2>
+							My Professional Experience
+						</h2>
+
+					</header>
+
+
+					<p>
+
+						My professional experience includes a
+						<strong>
+							Graduate Teaching Fellowship and three
+							professional internships
+						</strong>
+						across education, youth development, project
+						coordination, and financial services.
+
+						These experiences have allowed me to develop
+						practical skills while working in academic,
+						organizational, and professional environments.
+
+					</p>
+
+
+					<!-- =============================================
+					     EXPERIENCE OVERVIEW
+					     ============================================= -->
+
+					<div class="experience-stats">
+
+
+						<div class="experience-stat">
+
+							<strong>
+								01
+							</strong>
+
+							<span>
+								Professional Fellowship
+							</span>
+
+						</div>
+
+
+						<div class="experience-stat">
+
+							<strong>
+								02
+							</strong>
+
+							<span>
+								Professional Internships
+							</span>
+
+						</div>
+
+
+						<div class="experience-stat">
+
+							<strong>
+								03
+							</strong>
+
+							<span>
+								Total Experiences
+							</span>
+
+						</div>
+
+
+						<div class="experience-stat">
+
+							<strong>
+								03
+							</strong>
+
+							<span>
+								Professional Areas
+							</span>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<!-- =================================================
+			     EXPERIENCE CARDS
+			     ================================================= -->
+
+			<section id="two">
+
+				<div class="inner">
+
+
+					<header class="major">
+
+						<h2>
+							My Experiences
+						</h2>
+
+					</header>
+
+
+					<div class="experience-grid">
+
+
+						<!-- =================================================
+						     01. GRADUATE TEACHING FELLOW
+						     ================================================= -->
+
+						<article class="experience-card">
+
+
+							<a
+								href="grad teaching fellowship.html"
+								class="experience-image"
+							>
+
+								<img
+									src="images/Ibn haldun Univeristy.PNG"
+									alt="Ibn Haldun University"
+								/>
+
+							</a>
+
+
+							<div class="experience-content">
+
+
+								<span class="experience-number">
+									01 / 03
+								</span>
+
+
+								<h3>
+									Graduate Teaching Fellow
+								</h3>
+
+
+								<span class="experience-category">
+									Teaching &amp; Academia
+								</span>
+
+
+								<div class="experience-meta">
+
+									<strong>
+										Ibn Haldun University
+									</strong>
+
+									<br />
+
+									September 2023 – Present
+
+									<br />
+
+									Istanbul, Türkiye
+
+								</div>
+
+
+								<p>
+
+									Teaching undergraduate students in
+									<strong>
+										statistics and quantitative
+										methods
+									</strong>,
+									covering regression analysis, ANOVA,
+									time series forecasting, and data
+									visualization.
+
+									Worked with classes of more than
+									<strong>
+										120 students
+									</strong>
+									using Stata, SPSS, Excel, Python, and R.
+
+								</p>
+
+
+								<ul class="actions">
+
+									<li>
+
+										<a
+											href="grad teaching fellowship.html"
+											class="button"
+										>
+											View Experience
+										</a>
+
+									</li>
+
+								</ul>
+
+
+							</div>
+
+						</article>
+
+
+						<!-- =================================================
+						     02. PROJECT INTERN
+						     ================================================= -->
+
+						<article class="experience-card">
+
+
+							<a
+								href="Project Intern.html"
+								class="experience-image"
+							>
+
+								<img
+									src="images/Global encounter camp 2026 certificate.jpg"
+									alt="Aga Khan Education Board"
+								/>
+
+							</a>
+
+
+							<div class="experience-content">
+
+
+								<span class="experience-number">
+									02 / 03
+								</span>
+
+
+								<h3>
+									Project Intern – Educational Programs
+								</h3>
+
+
+								<span class="experience-category">
+									Education &amp; Project Management
+								</span>
+
+
+								<div class="experience-meta">
+
+									<strong>
+										Aga Khan Education Board
+									</strong>
+
+									<br />
+
+									June 2023 – August 2023
+
+									<br />
+
+									Karachi, Pakistan
+
+								</div>
+
+
+								<p>
+
+									Supported the administration and delivery
+									of an educational bridge camp involving
+									more than <strong>200 participants</strong>.
+
+									Monitored program performance, supported
+									project leads, taught selected courses,
+									and prepared an evaluation report whose
+									recommendations were implemented in the
+									following year's project.
+
+								</p>
+
+
+								<ul class="actions">
+
+									<li>
+
+										<a
+											href="Project Intern.html"
+											class="button"
+										>
+											View Experience
+										</a>
+
+									</li>
+
+								</ul>
+
+
+							</div>
+
+						</article>
+
+
+						<!-- =================================================
+						     03. U MICROFINANCE BANK
+						     ================================================= -->
+
+						<article class="experience-card">
+
+
+							<a
+								href="microfinane.html"
+								class="experience-image"
+							>
+
+								<img
+									src="images/pic10.jpg"
+									alt="U Microfinance Bank"
+								/>
+
+							</a>
+
+
+							<div class="experience-content">
+
+
+								<span class="experience-number">
+									03 / 03
+								</span>
+
+
+								<h3>
+									Intern – U Microfinance Bank
+								</h3>
+
+
+								<span class="experience-category">
+									Banking &amp; Finance
+								</span>
+
+
+								<div class="experience-meta">
+
+									<strong>
+										U Microfinance Bank Limited
+									</strong>
+
+									<br />
+
+									February 2023 – April 2023
+
+									<br />
+
+									Islamabad, Pakistan
+
+								</div>
+
+
+								<p>
+
+									Gained practical exposure to the
+									<strong>
+										microfinance banking sector
+									</strong>,
+									including administration, computer
+									literacy, and organizational operations.
+
+									The experience provided insight into
+									professional workflows and the day-to-day
+									operations of a financial institution.
+
+								</p>
+
+
+								<ul class="actions">
+
+									<li>
+
+										<a
+											href="microfinane.html"
+											class="button"
+										>
+											View Experience
+										</a>
+
+									</li>
+
+								</ul>
+
+
+							</div>
+
+						</article>
+
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<!-- =================================================
+			     FINAL SECTION
+			     ================================================= -->
+
+			<section id="three">
+
+				<div class="inner">
+
+
+					<header class="major">
+
+						<h2>
+							From Learning to Practice
+						</h2>
+
+					</header>
+
+
+					<div class="experience-box">
+
+
+						<p>
+
+							These experiences have allowed me to apply what I
+							learned academically in real working environments.
+
+							From teaching students and supporting educational
+							programs to gaining exposure to financial services,
+							each role has contributed to my professional
+							development.
+
+						</p>
+
+
+						<p>
+
+							Together, these experiences have strengthened my
+							ability to
+
+							<strong>
+								communicate, collaborate,
+								analyze problems, manage responsibilities, and
+								work with people from different backgrounds
+							</strong>.
+
+						</p>
+
+
+					</div>
+
+
+					<ul class="actions">
+
+						<li>
+
+							<a
+								href="index.html"
+								class="button next"
+							>
+								Back to Portfolio
+							</a>
+
+						</li>
+
+					</ul>
+
+
+				</div>
+
+			</section>
+
+
+		</div>
+
+
+		<!-- =====================================================
+		     CONTACT
+		     ===================================================== -->
+
+		<section id="contact">
+
+			<div class="inner">
+
+
+				<section>
+
+
+					<form
+						method="post"
+						action="#"
+					>
+
+
+						<div class="fields">
+
+
+							<div class="field half">
+
+								<label for="name">
+									Name
+								</label>
+
+								<input
+									type="text"
+									name="name"
+									id="name"
+								/>
+
+							</div>
+
+
+							<div class="field half">
+
+								<label for="email">
+									Email
+								</label>
+
+								<input
+									type="text"
+									name="email"
+									id="email"
+								/>
+
+							</div>
+
+
+							<div class="field">
+
+								<label for="message">
+									Message
+								</label>
+
+								<textarea
+									name="message"
+									id="message"
+									rows="6"
+								></textarea>
+
+							</div>
+
+
+						</div>
+
+
+						<ul class="actions">
+
+
+							<li>
+
+								<input
+									type="submit"
+									value="Send Message"
+									class="primary"
+								/>
+
+							</li>
+
+
+							<li>
+
+								<input
+									type="reset"
+									value="Clear"
+								/>
+
+							</li>
+
+
+						</ul>
+
+
+					</form>
+
+
+				</section>
+
+
+				<section class="split">
+
+
+					<section>
+
+						<div class="contact-method">
+
+							<span
+								class="icon solid alt fa-envelope"
+							></span>
+
+							<h3>
+								Email
+							</h3>
+
+							<a
+								href="mailto:inzimam.rahman@stu.ihu.edu.tr"
+							>
+								inzimam.rahman@stu.ihu.edu.tr
+							</a>
+
+						</div>
+
+					</section>
+
+
+					<section>
+
+						<div class="contact-method">
+
+							<span
+								class="icon solid alt fa-phone"
+							></span>
+
+							<h3>
+								Phone
+							</h3>
+
+							<span>
+								(+90) 5469062203
+							</span>
+
+						</div>
+
+					</section>
+
+
+					<section>
+
+						<div class="contact-method">
+
+							<span
+								class="icon solid alt fa-home"
+							></span>
+
+							<h3>
+								Address
+							</h3>
+
+							<span>
+								Başak Mah. Ordu Cad. No:3<br />
+								34480 Başakşehir/İstanbul<br />
+								Türkiye
+							</span>
+
+						</div>
+
+					</section>
+
+
+				</section>
+
+
+			</div>
+
+		</section>
+
+
+		<!-- =====================================================
+		     FOOTER
+		     ===================================================== -->
+
+		<footer id="footer">
+
+			<div class="inner">
+
+
+				<ul class="icons">
+
+
+					<!-- =================================================
+					     LABLAB AI — FIRST
+					     ================================================= -->
+
+					<li>
+
+						<a
+							href="https://lablab.ai/u/@inzimam"
+							class="icon solid alt fa-robot"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+
+							<span class="label">
+								LabLab AI
+							</span>
+
+						</a>
+
+					</li>
+
+
+					<!-- =================================================
+					     GITHUB — SECOND
+					     ================================================= -->
+
+					<li>
+
+						<a
+							href="https://github.com/Inzimam-Ur"
+							class="icon brands alt fa-github"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+
+							<span class="label">
+								GitHub
+							</span>
+
+						</a>
+
+					</li>
+
+
+					<!-- =================================================
+					     LINKEDIN — THIRD
+					     ================================================= -->
+
+					<li>
+
+						<a
+							href="https://www.linkedin.com/in/inzimam-ur-rehman/"
+							class="icon brands alt fa-linkedin-in"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+
+							<span class="label">
+								LinkedIn
+							</span>
+
+						</a>
+
+					</li>
+
+
+				</ul>
+
+
+				<ul class="copyright">
+
+
+					<li>
+						&copy; 2026 Inzimam Ur Rehman
+					</li>
+
+
+					<li>
+						Design:
+
+						<a
+							href="https://html5up.net"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							HTML5 UP
+						</a>
+
+					</li>
+
+
+				</ul>
+
+
+			</div>
+
+		</footer>
+
+
+	</div>
+
+
+	<!-- =====================================================
+	     SCRIPTS
+	     ===================================================== -->
+
+	<script src="assets/js/jquery.min.js"></script>
+
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+
+	<script src="assets/js/browser.min.js"></script>
+
+	<script src="assets/js/breakpoints.min.js"></script>
+
+	<script src="assets/js/util.js"></script>
+
+	<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
